@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- oceanNext -->
+    <!-- Bootstrap and fontawesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+
+		<!-- Huber Style -->
+		<link rel="stylesheet" href="css/boscoPageStyle.css" type="text/css">
+
+    <title>BOSCO Uganda Internship</title>
+    <style></style>
+
+
+  </head>
+  <body>
+		<div class="top">
+			<div class="row">
+				<div class="col-md-1">
+					<img src="pics/bosco-logo.png" alt="bosco-logo">
+				</div>
+				<div class="col-md-9">
+					<h1>BOSCO-DMICU Project <small>Gulu, Uganda</small></h1>
+					<h2>Data Monitoring Interface for Computer Users</h2>
+				</div>
+				<div class="col-md-2">
+					<h4>Jake Huber</h4>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<p><a href="http://boscouganda.com/">BOSCO Uganda</a> is a non-profit NGO operating out of
+			Northern Uganda that strives to bring power and computer technologies to the rural areas.
+			Their mission is to "To provide innovative information and Communication Techology (ICT)
+			solutions using a collaborative and web-based approach to foster socio-economic development
+			and peace building in rural communities in Northern Uganda". I had the privilege to work with
+			them this past summer and this project is a result of that work.</p>
+			<hr>
+			<!-- Nav tabs -->
+			<div class="">
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="tab" href="#overview">Project Overview</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#vidIntro">Video Intro</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#vidDemo">Video Demo</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#app">Windows Form App</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#py">Python Scripts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#instruct">Instruction Guide</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<!-- Tab panes -->
+			<div class="tab-content shadow p-4 mb-4 bg-white">
+				<div id="overview" class="container tab-pane active"><br>
+					<div class="row">
+						<div class="col-md-6">
+							<h3>Project Overview</h3>
+							<p>BOSCO Uganda has partnered with UNICEF to deploy digital doorways in refugee camps and schools
+								throughout rural areas in northern Uganda. The digital doorway consists of three distinct laptop computers
+								that are powered by a solar charged battery system. All of this is contained within a kiosk station which allows
+								three users to work at any time.</p>
+							<p>In order to improve these systems, BOSCO Uganda needs to collect information about the users’ demographics and
+								application use to ensure that the digital doorways are being utilized by each demographic for educational purposes.
+								Since the system contains only one user account that everyone logs in and uses, it is difficult to know who is using
+							 	the system, how often they are using the system, and what applications they are using. The team, led by Jacob Huber,
+								has created a simple Windows desktop application that will appear immediately as a user logs into the machine and every
+								thirty minutes following to reach every user. The application will require the user to login or create an account,
+								depending on if they are a first-time user. Basic information about demographics will be collected, stored within
+								a database, and accessible to BOSCO Uganda. In addition to the demographics collection, the team has developed
+								python scripts that will run intermittently as background processes to collect the names of applications the user
+								is running. The applications which will be recorded are those open in the main taskbar at the bottom of the screen,
+								such as Google Chrome or Microsoft Word. The application and background monitoring require minimal user interaction
+								ensuring project success regardless of the user’s prior technological knowledge. </p>
+							<p>The installation of these systems has already begun with the first two deployments being at Pagirinya Secondary
+								School – a school created specifically to serve the South Sudanese refugee community and other residents of the
+								surrounding Pagirinya area – and St. Mary’s Assumpta Secondary School. In a few months, BOSCO Uganda will be able
+								to collect and analyze this information in order to find trends regarding how the computers are used in order to
+								improve resources available to refugees and students.</p>
+						</div>
+						<div class="col-md-6">
+							<img class="w-100" src="pics/BOSCO-DMICU Team.jpg" alt="team">
+							<h5>BOSCO Data Monitoring Interface for Computer Users Project Team:</h5>
+							<p>(Pictured from left to right: Odong James, Watmon Patrick, Okello Christoper, Apiyo Eunice, ICT Teacher at Pagirinya,
+								Lakot Barbara, Jacob Huber, Lanyero Gertrude, Olweny Simon. Not pictured: Annalise Wagner )</p>
+							<img class="w-100" src="pics/BOSCO-DMICU.jpg" alt="working">
+							<h5>Team Working on Project at a Digital Doorway</h5>
+
+						</div>
+					</div>
+				</div>
+				<div id="vidIntro" class="container tab-pane fade"><br>
+					<h3>Video Intro</h3>
+				  <iframe src="https://drive.google.com/file/d/1d-tWMmrsotUgzUfl3WTCbCIQce3mtdiN/preview" width="640" height="480"></iframe>
+
+				</div>
+				<div id="vidDemo" class="container tab-pane fade"><br>
+					<h3>Video Demo</h3>
+					<iframe src="https://drive.google.com/file/d/1-wVAxyYwFdGHp9Ivgh3ssPxvGk-KQ6-k/preview" width="640" height="480"></iframe>
+				</div>
+				<div id="app" class="container tab-pane fade"><br>
+					<h3>Windows From Application</h3>
+					<hr>
+					<div class="row">
+						<div class="col-md-8">
+							<img src="pics/BOSCO-DMICU-Interface.png" alt="app interface">
+							<p><em>Interface of the Application</em></p>
+						</div>
+						<div class="col-md-4">
+							<h3>Key Features</h3>
+							<ul>
+								<li>Information auto fills if the name is already in database.</li>
+								<li>Submit is only permitted after the required fields are filled.</li>
+								<li>App takes entire screen with no close button ensuring the user submits.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="py" class="container tab-pane fade"><br>
+					<div class="row">
+						<div class="col-md-4">
+							<h3>Background Monitor Python Scripts</h3>
+							<p>I developed two python scripts that run intermittently as background processes to collect the
+								names of applications the user is running. The applications which will be recorded are those
+								open in the main taskbar at the bottom of the screen, such as Google Chrome or Microsoft Word.
+								The application and background monitoring require minimal user interaction ensuring project
+								success regardless of the user’s prior technological knowledge. </p>
+							<p>The first script is broken down into 3 different categories</p>
+							<ol>
+								<li>Connect to SQL Server and acquire contents	</li>
+								<li>Run powershell commands to find apps running
+									<br>
+									The powershell script produces the following information when run:</li>
+								<li>Lastly, add application to database if it is not already there.</li>
+								<p>The second python script works very similarly. It connects to the database,
+								extracts the name of the current user, and then links the name to the applications
+								being used. This is very helpful because it allows BOSCO to be able to find data on
+								a specific demographic or age range. </p>
+								<li>The main change in code is the addition of a section
+								to get the name in order to link it.</li>
+							</ol>
+						</div>
+						<div class="col-md-8">
+							<ol>
+								<li><img src="pics/pySnip1.jpg" alt="pySnip1"></li>
+								<li><img src="pics/pySnip2.jpg" alt="pySnip2">
+									<br>
+									<img src="pics/pySnip3.jpg" alt="pySnip3">
+								</li>
+								<li><img src="pics/pySnip4.jpg" alt="pySnip4"></li>
+								<li><img src="pics/pySnip5.jpg" alt="pySnip5"></li>
+							</ol>
+						</div>
+					</div>
+
+
+				</div>
+				<div id="instruct" class="container tab-pane fade"><br>
+					<h3>Instruction Manual</h3>
+					<p>Along the process I collected resources and information on the materials that
+					are needed to install and run the entire project successfully. One major componenet of the
+					project is that it has and will continue to be deployed at computer centers that do not
+					have access to the internet. As a result, all of the things that are needed to run the
+					project, such as python libraries for SQL Databases, need to be downloaded online and made
+					available to take offline. The instruction manual that I created centers around a folder
+					that I designed to contain everything that the user needs in order to install the system. </p>
+					<iframe src="https://drive.google.com/file/d/12_Mt6278lcO9ZN_0kbplWmEZA_fluLQT/preview" width="640" height="480"></iframe>
+				</div>
+			</div>
+		</div>
+  </body>
+</html>
+

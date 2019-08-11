@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap and fontawesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+
+		<!-- Huber Style -->
+		<link rel="stylesheet" href="css/huberStyle.css" type="text/css">
+
+    <title>Jake Huber Portfolio Website</title>
+    <style></style>
+
+		<!-- TODO:
+					- Research font styles
+					@font-face (font-family: )
+					- Learn/reference css
+	 -->
+
+  </head>
+  <body>
+    <!--Sidebar-->
+    <aside id="sidebar">
+			<div id="bioPicCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+			    <li data-target="#bioPicCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#bioPicCarousel" data-slide-to="1"></li>
+			    <li data-target="#bioPicCarousel" data-slide-to="2"></li>
+			  </ul>
+				<!-- Slideshow -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="pics/bio_headshot_resize.jpg" alt="headshot">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="pics/bio_paimol_resize.jpg" alt="paimol">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block " src="" alt="">
+					</div>
+				</div>
+			</div>
+				<!--Picture: maybe 3 or so rotating through-->
+				<!--Name-->
+				<!--Navigation:
+					Containing:
+						- About
+						- Projects
+						- Skills
+						- Education
+						- Experience
+						- Contact
+					Each section should be underlined if they are within that section.
+					Link each one to its respective section
+					-->
+
+				<h2>Jacob Huber</h2>
+				<hr>
+				<nav id="sidenav">
+					<ul>
+						<li><a class="active aNav" href="#about">About</a></li>
+						<li><a class="pNav" href="#projects">Projects</a></li>
+						<li><a class="sNav" href="#skills">Skills</a></li>
+						<li><a class="eNav" href="#education">Education</a></li>
+						<!-- <li><a href="#experience">Experience</a></li> -->
+						<li><a class="cNav" href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+		</aside>
+    <!--Main-->
+
+		<div id="content" class="animated fadeInDownBig slower">
+			<!-- <div class="openImg">
+				<img class= "w-100" src="pics/nd_lake.jpg" alt="grotto">
+			</div> -->
+			<section id="about" class="section"> <!--About-->
+				<h1>About</h1>
+				<br>
+				<blockquote class="blockquote">
+					"You cannot carry out fundamental change without a certain amount of madness. In this case, it comes from non-conformity;
+					the ability to turn your back on old formulas; the <em>courage</em> to invent the future. It took the madmen of yesterday for us to be
+					able to act with extreme clarity today. <em><strong>I want to be one of those madmen.</strong></em> We must dare to invent the future."
+					<p class="blockquote-footer">Thomas Sankura</p>
+				</blockquote>
+				<p>I am currently a junior studying Computer Engineering at the University of Notre Dame with the hope of pursuing a career in software development. I am interested in using computer programming to improve the lives of people often forgotten or overlooked. </p>
+				<p>This past summer I worked with BOSCO-Uganda – a non-profit NGO in northern Uganda – in their effort to connect people while preserving culture through the implementation of solar power systems, wireless connectivity, and computer centers.
+					While there I led a team of Ugandan interns in creating a data monitoring interface for computer users that can be implemented within refugee camp computer centers. This was developed using Python, Windows PowerShell Process commands, C# Windows Forms, and Microsoft SQL. </p>
+				<p>When I am not busy working with computers, I enjoy playing soccer for Notre Dame’s Varsity Men’s soccer team as a rostered walk-on. With the little time left I find myself drawn to learning about life’s deeper questions through a Theology minor and investigating intricate international and domestic social issues through seminars with the Center for Social Concerns.</p>
+				<p>If you are looking for someone who only stops when the job is done, always finds a way, is willing to risk stepping outside of the comfort zone, and hungry to tackle big problems, then I am the one for you. </p>
+			</section>
+
+			<section id="projects" class="section"> <!--Projects-->
+				<h1>Projects</h1>
+				<br>
+				<div class="container mt-40">
+					<div class="row mt-30">
+
+            <div class="col-md-6">
+                <div class="box3">
+                    <img src="pics/BOSCO-DMICU Installation.jpg" alt="BOSCO-dmicuTeam">
+                    <div class="box-content">
+                        <h3 class="title" style="color:#25A8C4">BOSCO Data Monitoring Interface for Computer Users</h3>
+                        <span class="post">Data Monitoring Project</span>
+                        <p class="description">
+                            Lead a team of interns at BOSCO Uganda in Gulu, Uganda in taking a project from an idea to a deployed product.
+														<br>
+														This project used python scripts, Windows Form Apps programmed with C#, and Microsoft SQL Databases.
+                        </p>
+                        <ul class="icon">
+                            <li><a href="boscoPage.html" target="_blank" class="fa fa-link" style="background:#25A8C4"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+						<div class="col-md-6">
+                <div class="box3">
+                    <img src="pics/MicrophoneArray.jpg" alt="research">
+                    <div class="box-content">
+                        <h3 class="title">Security Application for Voice Assistant Systems</h3>
+                        <span class="post">Undergrad Research in Computing</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci pariatur qui.
+                        </p>
+                        <ul class="icon">
+                            <li><a href="compResearchPage.html" target="_blank" class="fa fa-link"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+					</div>
+					<div class="row mt-30">
+
+						<div class="col-md-6">
+                <div class="box3">
+                    <img src="pics/notre dame.jpg" alt="Spidey">
+                    <div class="box-content">
+                        <h3 class="title" style="color:#25A8C4">Web Server called Spidey (Class Project)</h3>
+                        <span class="post">Systems Programming Class Project</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci pariatur qui.
+                        </p>
+                        <ul class="icon">
+                            <li><a href="spidey.html" target="_blank" class="fa fa-link" style="background:#25A8C4"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+						<div class="col-md-6">
+                <div class="box3">
+                    <img src="pics/notre dame.jpg" alt="DK">
+                    <div class="box-content">
+                        <h3 class="title" style="color:#25A8C4">Donkey Kong on FPGA Microprocessor (Class Project)</h3>
+                        <span class="post">Logic Design Class Project</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci pariatur qui.
+                        </p>
+                        <ul class="icon">
+                            <li><a href="DKLogic.html" target="_blank" class="fa fa-link" style="background:#25A8C4"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+					</div>
+
+				</div>
+			</section>
+			<br>
+
+			<section id="skills" class="section"> <!--Skills-->
+				<h1>Skills</h1>
+				<br>
+				<div class="skillsLine">
+					<div class="skillsBlock right">
+						<div class="content">
+							<h3>Work Projects</h3>
+							<button type="button" class="btn btn-success">Python</button>
+							<button type="button" class="btn btn-success">Visual Studio</button>
+							<button type="button" class="btn btn-success">.NET</button>
+							<button type="button" class="btn btn-success">Microsoft SQL</button>
+							<button type="button" class="btn btn-success">Technical Writing</button>
+							<button type="button" class="btn btn-success">Windows PowerShell</button>
+						</div>
+					</div>
+					<div class="skillsBlock right">
+						<div class="content">
+							<h3>Research</h3>
+							<button type="button" class="btn btn-info">Python</button>
+							<button type="button" class="btn btn-info">Shell Scripting</button>
+							<button type="button" class="btn btn-info">UNIX command line</button>
+							<button type="button" class="btn btn-info">Technical Writing</button>
+						</div>
+					</div>
+					<div class="skillsBlock right">
+						<div class="content">
+							<h3>Classes</h3>
+							<button type="button" class="btn btn-primary">Python</button>
+							<button type="button" class="btn btn-primary">C++</button>
+							<button type="button" class="btn btn-primary">C</button>
+							<button type="button" class="btn btn-primary">Technical Writing</button>
+							<button type="button" class="btn btn-primary">Git</button>
+							<button type="button" class="btn btn-primary">UNIX command line</button>
+							<button type="button" class="btn btn-primary">Verilog</button>
+							<button type="button" class="btn btn-primary">ModelSim</button>
+							<button type="button" class="btn btn-primary">Shell Scripting</button>
+							<button type="button" class="btn btn-primary">Quartus</button>
+							<button type="button" class="btn btn-primary">MATLAB</button>
+						</div>
+					</div>
+					<div class="skillsBlock right">
+						<div class="content">
+							<h3>Personal Projects (dabbled)</h3>
+							<button type="button" class="btn btn-warning">HTML</button>
+							<button type="button" class="btn btn-warning">CSS</button>
+						</div>
+					</div>
+
+
+				</div>
+				<br>
+				<br>
+			</section>
+
+			<section id="education" class="section"> <!--Education-->
+				<h1>Education</h1>
+				<br>
+				<h2>University of Notre Dame <small>Notre Dame, IN</small></h2>
+					<ul>
+						<li>Graduate in May 2019</li>
+						<li>B.S. in Computer Engineering</li>
+						<li>Minor in Theology</li>
+						<li>Cumulative GPA: <kbd>3.929</kbd></li>
+					</ul>
+
+				<h2>St. Xavier High School <small>Cincinnati, OH</small></h2>
+					<ul>
+						<li>Graduated in June 2017</li>
+						<li>Cumulative GPA: 97.86 / 100</li>
+						<li>Accolades</li>
+							<ul>
+								<li>National Honor Society</li>
+								<li>Mu Alpha Theta Mathematical Honor Society</li>
+								<li>National Latin Exam Gold Medal – Summa Cum Laude</li>
+								<li>National Language Honor Society</li>
+							</ul>
+					</ul>
+				<br>
+			</section>
+
+			<!-- <section id="Experience" class="animated fadeInLeft section">
+				<h1>Experience</h1>
+				<hr>
+					<h2>BOSCO Uganda (<strong>B</strong>attery <strong>O</strong>perated <strong>S</strong>ystems for <strong>C</strong>ommunity <strong>O</strong>utreach)</h2>
+					<p class="font-italic">Intern – Project Leader, Summer 2019</p>
+
+
+			</section> -->
+
+
+			<section id="contact" class="section"> <!--Contact-->
+				<h1>Contact</h1>
+				<hr>
+				<p>
+					Please feel free to reach out to me if you have any questions, concerns, or would just like to chat!
+				</p>
+					<ul class="fa-ul">
+						<li><span class="fa-li"><i class="fas fa-envelope-square"></i></span>huber.jacob.2@gmail.com</li>
+						<li><span class="fa-li"><i class="fab fa-linkedin"></i></span><a href="www.linkedin.com/in/jake-huber-300a1a170">www.linkedin.com/in/jake-huber-300a1a170</a></li>
+					</ul>
+					<br>
+
+				</p>
+			</section>
+
+		</div>
+
+	<script src="page.js"></script>
+
+  </body>
+</html>
+
