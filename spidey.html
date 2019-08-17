@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- oceanNext -->
+    <!-- Bootstrap and fontawesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+
+		<!-- Huber Style -->
+		<link rel="stylesheet" href="css/boscoPageStyle.css" type="text/css">
+
+    <title>Systems Programming Project</title>
+    <style></style>
+
+
+  </head>
+  <body>
+		<div class="top">
+			<div class="row">
+				<div class="col-md-1">
+					<img src="pics/nd.png" alt="nd">
+				</div>
+				<div class="col-md-9">
+					<h1>Spidey - Web Server Project <small>University of Notre Dame</small></h1>
+					<h2>Systems Programming Class Project</h2>
+				</div>
+				<div class="col-md-2">
+					<h4>Jake Huber</h4>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<p>Brief intro to what we did and what this page contains</p>
+			<hr>
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" data-toggle="tab" href="#overview">Project Overview</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#code">Code Breakdown</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#pres">Final Presentation</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#instruct">Instruction Guide</a>
+				</li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content shadow p-4 mb-4 bg-white">
+				<div id="overview" class="container tab-pane active"><br>
+					<div class="row">
+						<div class="col-md-6">
+							<h3>Project Description</h3>
+							<p>From the course website: "The goal of this project is to allow you to practice using low-level system calls related to sockets and networking. To do this, you will create two new programs:"
+								<ul>
+									<li><strong>thor</strong>: This is a basic HTTP client that will hammer a remote HTTP server by making multiple requests.</li>
+									<li><strong>spidey</strong>: This is a basic HTTP server that supports directory listings, static files, and CGI scripts.</li>
+								</ul>
+								Once you have these programs, you will conduct experiments using thor to test the latency and throughput of spidey."
+								<br>
+								In order to implement the HTTP server we first:
+								<ol>
+									<li>Allocate a server socket, bind it to a port, and then listen for incoming connections.</li>
+									<li></li>
+								</ol>
+							</p>
+						</div>
+						<div class="col-md-6">
+							<ol>
+								<li>
+									<img class="w-100" src="pics/thor.png" alt="thor">
+									<h5>Diagram of thor python script</h5>
+								</li>
+								<li>
+									<img class="w-100" src="pics/spideyDiagram.png" alt="spideyDiagram">
+									<h5>Diagram of entire spidey server</h5>
+								</li>
+							</ol>
+
+						</div>
+					</div>
+				</div>
+				<div id="code" class="container tab-pane fade"><br>
+					<h3>Code Breakdown</h3>
+
+				</div>
+				<div id="pres" class="container tab-pane fade"><br>
+					<h3>Final Presentation</h3>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQFuMxFaWE9KChJe95Kh7JNAA11HMwjUFShCHbK4VIQ62I9TaTmoHUsEZYyMLBwX33rvx0oIpXythZd/embed?start=true&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>				</div>
+				<div id="instruct" class="container tab-pane fade"><br>
+					<h3>Instruction Manual</h3>
+				</div>
+			</div>
+		</div>
+
+
+  </body>
+</html>
+

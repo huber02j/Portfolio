@@ -21,13 +21,16 @@
     <style></style>
 
 		<!-- TODO:
-					- Research font styles
-					@font-face (font-family: )
-					- Learn/reference css
+					- Update descriptions in projects
 	 -->
 
   </head>
   <body>
+		<div class="openImg">
+			<div class="openTxt">
+				<h1>Jake Huber</h1>
+			</div>
+		</div>
     <!--Sidebar-->
     <aside id="sidebar">
 			<div id="bioPicCarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -46,7 +49,7 @@
 						<img class="d-block w-100" src="pics/bio_paimol_resize.jpg" alt="paimol">
 					</div>
 					<div class="carousel-item">
-						<img class="d-block " src="" alt="">
+						<img class="d-block w-100" src="pics/NDSoccer.png" alt="soccer">
 					</div>
 				</div>
 			</div>
@@ -64,7 +67,7 @@
 					Link each one to its respective section
 					-->
 
-				<h2>Jacob Huber</h2>
+				<h2>Jake Huber</h2>
 				<hr>
 				<nav id="sidenav">
 					<ul>
@@ -80,9 +83,7 @@
     <!--Main-->
 
 		<div id="content" class="animated fadeInDownBig slower">
-			<!-- <div class="openImg">
-				<img class= "w-100" src="pics/nd_lake.jpg" alt="grotto">
-			</div> -->
+
 			<section id="about" class="section"> <!--About-->
 				<h1>About</h1>
 				<br>
@@ -96,12 +97,12 @@
 				<p>This past summer I worked with BOSCO-Uganda – a non-profit NGO in northern Uganda – in their effort to connect people while preserving culture through the implementation of solar power systems, wireless connectivity, and computer centers.
 					While there I led a team of Ugandan interns in creating a data monitoring interface for computer users that can be implemented within refugee camp computer centers. This was developed using Python, Windows PowerShell Process commands, C# Windows Forms, and Microsoft SQL. </p>
 				<p>When I am not busy working with computers, I enjoy playing soccer for Notre Dame’s Varsity Men’s soccer team as a rostered walk-on. With the little time left I find myself drawn to learning about life’s deeper questions through a Theology minor and investigating intricate international and domestic social issues through seminars with the Center for Social Concerns.</p>
-				<p>If you are looking for someone who only stops when the job is done, always finds a way, is willing to risk stepping outside of the comfort zone, and hungry to tackle big problems, then I am the one for you. </p>
+				<p>If you are looking for someone who only stops when the job is done, always finds a way, is willing to risk stepping outside of the comfort zone, and hungry to tackle big problems, then <strong>I am the one for you</strong>. </p>
+				<br>
 			</section>
 
 			<section id="projects" class="section"> <!--Projects-->
 				<h1>Projects</h1>
-				<br>
 				<div class="container mt-40">
 					<div class="row mt-30">
 
@@ -112,7 +113,7 @@
                         <h3 class="title" style="color:#25A8C4">BOSCO Data Monitoring Interface for Computer Users</h3>
                         <span class="post">Data Monitoring Project</span>
                         <p class="description">
-                            Lead a team of interns at BOSCO Uganda in Gulu, Uganda in taking a project from an idea to a deployed product.
+                            Led a team of interns at BOSCO Uganda in Gulu, Uganda in taking a project from an idea to a deployed product.
 														<br>
 														This project used python scripts, Windows Form Apps programmed with C#, and Microsoft SQL Databases.
                         </p>
@@ -124,12 +125,35 @@
             </div>
 						<div class="col-md-6">
                 <div class="box3">
-                    <img src="pics/MicrophoneArray.JPG" alt="research">
+                    <img src="pics/DKSnip.jpg" alt="DK">
+                    <div class="box-content">
+                        <h3 class="title" style="color:#c47a25">Donkey Kong on FPGA Microprocessor (Class Project)</h3>
+                        <span class="post">Logic Design Class Project</span>
+                        <p class="description">
+                            Created a version of the classic arcade game Donkey Kong with a partner.
+														<br>
+														This project used an Intel FPGA, Verilog Description Language on Quartus, and ModelSim.
+                        </p>
+                        <ul class="icon">
+                            <li><a href="DKLogic.html" target="_blank" class="fa fa-link" style="background:#c47a25"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+					</div>
+					<div class="row mt-30">
+						<div class="col-md-6">
+                <div class="box3">
+                    <img src="pics/MicrophoneArray.jpg" alt="research">
                     <div class="box-content">
                         <h3 class="title">Security Application for Voice Assistant Systems</h3>
                         <span class="post">Undergrad Research in Computing</span>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci pariatur qui.
+                            Assisted with creating database of voice recordings intended for protective research on voice controlled systems.
+														<br>
+														This project included python scripts, voice assistant systems, machine learning models, and Weka.
                         </p>
                         <ul class="icon">
                             <li><a href="compResearchPage.html" target="_blank" class="fa fa-link"></a></li>
@@ -137,40 +161,24 @@
                     </div>
                 </div>
             </div>
-
-					</div>
-					<div class="row mt-30">
-
 						<div class="col-md-6">
                 <div class="box3">
-                    <img src="pics/notre dame.jpg" alt="Spidey">
+                    <img src="pics/SpideySnip.jpg" alt="Spidey">
                     <div class="box-content">
-                        <h3 class="title" style="color:#25A8C4">Web Server called Spidey (Class Project)</h3>
+                        <h3 class="title" style="color:#c42542">Web Server called Spidey (Class Project)</h3>
                         <span class="post">Systems Programming Class Project</span>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci pariatur qui.
+                            Created a HTTP server, using low level C system calls, that handles single or multiple requests such as directories, static files, cgi scripts, and errors by forking processes.
+														<br>
+														This project used C, low level system calls, and python.
                         </p>
                         <ul class="icon">
-                            <li><a href="spidey.html" target="_blank" class="fa fa-link" style="background:#25A8C4"></a></li>
+                            <li><a href="spidey.html" target="_blank" class="fa fa-link" style="background:#c42542"></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-						<div class="col-md-6">
-                <div class="box3">
-                    <img src="pics/notre dame.jpg" alt="DK">
-                    <div class="box-content">
-                        <h3 class="title" style="color:#25A8C4">Donkey Kong on FPGA Microprocessor (Class Project)</h3>
-                        <span class="post">Logic Design Class Project</span>
-                        <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci pariatur qui.
-                        </p>
-                        <ul class="icon">
-                            <li><a href="DKLogic.html" target="_blank" class="fa fa-link" style="background:#25A8C4"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+
 					</div>
 
 				</div>
@@ -184,36 +192,37 @@
 					<div class="skillsBlock right">
 						<div class="content">
 							<h3>Work Projects</h3>
-							<button type="button" class="btn btn-success">Python</button>
-							<button type="button" class="btn btn-success">Visual Studio</button>
-							<button type="button" class="btn btn-success">.NET</button>
-							<button type="button" class="btn btn-success">Microsoft SQL</button>
-							<button type="button" class="btn btn-success">Technical Writing</button>
-							<button type="button" class="btn btn-success">Windows PowerShell</button>
+							<button type="button" class="btn btn-success"><a href="boscoPage.html" target="_blank">Python</a></button>
+							<button type="button" class="btn btn-success"><a href="boscoPage.html" target="_blank">Visual Studio</a></button>
+							<button type="button" class="btn btn-success"><a href="boscoPage.html" target="_blank">.NET</a></button>
+							<button type="button" class="btn btn-success"><a href="boscoPage.html" target="_blank">Microsoft SQL</a></button>
+							<button type="button" class="btn btn-success"><a href="boscoPage.html" target="_blank">Technical Writing</a></button>
+							<button type="button" class="btn btn-success"><a href="boscoPage.html" target="_blank">Windows PowerShell</a></button>
+
 						</div>
 					</div>
 					<div class="skillsBlock right">
 						<div class="content">
 							<h3>Research</h3>
-							<button type="button" class="btn btn-info">Python</button>
-							<button type="button" class="btn btn-info">Shell Scripting</button>
-							<button type="button" class="btn btn-info">UNIX command line</button>
-							<button type="button" class="btn btn-info">Technical Writing</button>
+							<button type="button" class="btn btn-info"><a href="compResearchPage.html" target="_blank">Python</a></button>
+							<button type="button" class="btn btn-info"><a href="compResearchPage.html" target="_blank">Shell Scripting</a></button>
+							<button type="button" class="btn btn-info"><a href="compResearchPage.html" target="_blank">UNIX command line</a></button>
+							<button type="button" class="btn btn-info"><a href="compResearchPage.html" target="_blank">Technical Writing</a></button>
 						</div>
 					</div>
 					<div class="skillsBlock right">
 						<div class="content">
 							<h3>Classes</h3>
-							<button type="button" class="btn btn-primary">Python</button>
-							<button type="button" class="btn btn-primary">C++</button>
-							<button type="button" class="btn btn-primary">C</button>
-							<button type="button" class="btn btn-primary">Technical Writing</button>
-							<button type="button" class="btn btn-primary">Git</button>
+							<button type="button" class="btn btn-primary"><a href="spidey.html" target="_blank">Python</a></button>
+							<button type="button" class="btn btn-primary"><a href="spidey.html" target="_blank">C++</a></button>
+							<button type="button" class="btn btn-primary"><a href="spidey.html" target="_blank">C</a></button>
+							<button type="button" class="btn btn-primary"><a href="spidey.html" target="_blank">Technical Writing</a></button>
+							<button type="button" class="btn btn-primary"><a href="spidey.html" target="_blank">Git</a></button>
 							<button type="button" class="btn btn-primary">UNIX command line</button>
-							<button type="button" class="btn btn-primary">Verilog</button>
-							<button type="button" class="btn btn-primary">ModelSim</button>
+							<button type="button" class="btn btn-primary"><a href="DKLogic.html" target="_blank">Verilog</a></button>
+							<button type="button" class="btn btn-primary"><a href="DKLogic.html" target="_blank">ModelSim</a></button>
 							<button type="button" class="btn btn-primary">Shell Scripting</button>
-							<button type="button" class="btn btn-primary">Quartus</button>
+							<button type="button" class="btn btn-primary"><a href="DKLogic.html" target="_blank">Quartus</a></button>
 							<button type="button" class="btn btn-primary">MATLAB</button>
 						</div>
 					</div>
@@ -236,7 +245,7 @@
 				<br>
 				<h2>University of Notre Dame <small>Notre Dame, IN</small></h2>
 					<ul>
-						<li>Graduate in May 2019</li>
+						<li>Expected to graduate in May 2019</li>
 						<li>B.S. in Computer Engineering</li>
 						<li>Minor in Theology</li>
 						<li>Cumulative GPA: <kbd>3.929</kbd></li>
@@ -246,14 +255,14 @@
 					<ul>
 						<li>Graduated in June 2017</li>
 						<li>Cumulative GPA: 97.86 / 100</li>
-						<li>Accolades</li>
+						<!-- <li>Accolades</li>
 							<ul>
 								<li>National Honor Society</li>
 								<li>Mu Alpha Theta Mathematical Honor Society</li>
 								<li>National Latin Exam Gold Medal – Summa Cum Laude</li>
 								<li>National Language Honor Society</li>
 							</ul>
-					</ul>
+					</ul> -->
 				<br>
 			</section>
 
@@ -267,7 +276,7 @@
 			</section> -->
 
 
-			<section id="contact" class="section"> <!--Contact-->
+			<section id="contact" class="section shadow"> <!--Contact-->
 				<h1>Contact</h1>
 				<hr>
 				<p>
@@ -275,7 +284,8 @@
 				</p>
 					<ul class="fa-ul">
 						<li><span class="fa-li"><i class="fas fa-envelope-square"></i></span>huber.jacob.2@gmail.com</li>
-						<li><span class="fa-li"><i class="fab fa-linkedin"></i></span><a href="www.linkedin.com/in/jake-huber-300a1a170">www.linkedin.com/in/jake-huber-300a1a170</a></li>
+						<li><span class="fa-li"><i class="fab fa-linkedin"></i></span><a href="https://www.linkedin.com/in/jake-huber-300a1a170/" target="_blank">LinkedIn</a></li>
+						<li><span class="fa-li"><i class="fab fa-github-square"></i></span><a href="https://github.com/huber02j" target="_blank">Github</a></li>
 					</ul>
 					<br>
 
