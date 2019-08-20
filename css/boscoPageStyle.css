@@ -8,7 +8,7 @@ html, body {
 }
 
 .top{
-  background-color: #595959;
+  background-color: #444;
   color: white;
   padding: 10px;
   padding-left: 20px;
@@ -19,9 +19,36 @@ html, body {
 }
 .main{
   padding-top: 85px;
+  display: block;
   margin: 1em;
   position: relative;
   z-index: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .top{
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  .main{
+    padding-top: 0;
+  }
+  img{
+    width: 50% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  iframe{
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+.nav-pills>li>a:hover{
+  background-color: #444;
+  color: white;
 }
 kbd{
   display: inline;
@@ -31,13 +58,7 @@ h1{
   font-size: 1.75em;
   font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif;
 }
-/* .sticky{
-  background-color: white;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 177px;
-  z-index: 1;
-} */
+
 h2{
   font-size: 1.2em;
 }
