@@ -33,6 +33,7 @@
 		</div>
     <!--Sidebar-->
     <aside id="sidebar">
+			<!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
 			<div id="bioPicCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 				<!-- Indicators -->
 				<ul class="carousel-indicators">
@@ -66,7 +67,6 @@
 					Each section should be underlined if they are within that section.
 					Link each one to its respective section
 					-->
-
 				<h2>Jake Huber</h2>
 				<hr>
 				<nav id="sidenav">
@@ -79,9 +79,12 @@
 						<li><a class="cNav" href="#contact">Contact</a></li>
 					</ul>
 				</nav>
+
 		</aside>
     <!--Main-->
-
+		<!-- <div class="sideOpen">
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+		</div> -->
 		<div id="content" class="animated fadeInDownBig slower">
 
 			<section id="about" class="section"> <!--About-->
@@ -125,14 +128,13 @@
             </div>
 						<div class="col-md-6">
                 <div class="box3">
-                    <img src="pics/DKSnip.JPG" alt="DK">
+                    <img src="pics/DKSnip.jpg" alt="DK">
                     <div class="box-content">
                         <h3 class="title" style="color:#c47a25">Donkey Kong on FPGA Microprocessor (Class Project)</h3>
                         <span class="post">Logic Design Class Project</span>
                         <p class="description">
-                            Created a version of the classic arcade game Donkey Kong with a partner.
-														<br>
-														This project used an Intel FPGA, Verilog Description Language on Quartus, and ModelSim.
+                            Created a version of the classic arcade game Donkey Kong with a partner using an Intel FPGA, Verilog Description
+														Language on Quartus, and ModelSim.
                         </p>
                         <ul class="icon">
                             <li><a href="DKLogic.html" target="_blank" class="fa fa-link" style="background:#c47a25"></a></li>
@@ -146,14 +148,12 @@
 					<div class="row mt-30">
 						<div class="col-md-6">
                 <div class="box3">
-                    <img src="pics/MicrophoneArray.JPG" alt="research">
+                    <img src="pics/MicrophoneArray.jpg" alt="research">
                     <div class="box-content">
                         <h3 class="title">Security Application for Voice Assistant Systems</h3>
                         <span class="post">Undergrad Research in Computing</span>
                         <p class="description">
                             Assisted with creating database of voice recordings intended for protective research on voice controlled systems.
-														<br>
-														This project included python scripts, voice assistant systems, machine learning models, and Weka.
                         </p>
                         <ul class="icon">
                             <li><a href="compResearchPage.html" target="_blank" class="fa fa-link"></a></li>
@@ -163,14 +163,12 @@
             </div>
 						<div class="col-md-6">
                 <div class="box3">
-                    <img src="pics/SpideySnip.JPG" alt="Spidey">
+                    <img src="pics/SpideySnip.jpg" alt="Spidey">
                     <div class="box-content">
                         <h3 class="title" style="color:#c42542">Web Server called Spidey (Class Project)</h3>
                         <span class="post">Systems Programming Class Project</span>
                         <p class="description">
-                            Created a HTTP server, using low level C system calls, that handles single or multiple requests such as directories, static files, cgi scripts, and errors by forking processes.
-														<br>
-														This project used C, low level system calls, and python.
+                            Created a HTTP server, using low level C system calls, that handles multiple requests by forking processes.
                         </p>
                         <ul class="icon">
                             <li><a href="spidey.html" target="_blank" class="fa fa-link" style="background:#c42542"></a></li>
@@ -288,8 +286,10 @@
 						<li><span class="fa-li"><i class="fab fa-github-square"></i></span><a href="https://github.com/huber02j" target="_blank">Github</a></li>
 					</ul>
 					<br>
-
 				</p>
+				<div class="alert alert-primary">
+				  <a href="books.html" target="_blank" class="alert-link">Book List</a> - Check out some of the books that I have read!
+				</div>
 			</section>
 
 		</div>
