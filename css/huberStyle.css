@@ -4,7 +4,10 @@ html, body {
   height: 100%;
   font-size: 100%;
   font-family: "Times New Roman", Times, serif;
+  /* font: 14px/1.85em "Open Sans", Arial, Helvetice Neue, sans-serif; */
 }
+
+
 
 .openImg{
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../pics/Paimol.jpg");
@@ -146,7 +149,24 @@ p{
 #education h1{border-bottom: 5px solid #e800ec; border-left: 5px solid #e800ec; padding-left: 10px;}
 #contact h1{border-bottom: 5px solid #0004ec; border-left: 5px solid #0004ec; padding-left: 10px;}
 
+#aboutText{margin-left: 5%; margin-right: 5%;}
 #skills{box-sizing: border-box;}
+
+/* Making the boxes for each class within the skills section */
+.classWrapper{
+  margin: 40px; /* just for contrast */
+  position: relative;
+  border: 2px solid #00ec92;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.classTitle{
+  position: absolute;
+  top: -20px;
+  background: grey;
+  padding: 0 10px;
+}
 
 /* based on https://www.w3schools.com/howto/howto_css_timeline.asp */
 
@@ -304,15 +324,16 @@ p{
 .box3:hover img{transform:scale(1.2);filter:blur(5px);-moz-filter:blur(5px);-webkit-filter:blur(5px)}
 .box3 .box-content{padding:30px 10px;top:10%;bottom:10%;opacity:0;z-index:2}
 .box3:hover .box-content{box-shadow:0 0 0 35px rgba(255,255,255,.3);opacity:1;transition:all .3s}
-.box3 .title{font-size:24px;font-weight:600;color:#88c425;margin:0 0 5px}
+.box3 .title{font-size:24px;font-weight:600;color:#6eff90;margin:0 0 5px}
 .box3 .post{display:block;margin:0 0 5px;font-size:14px;color:rgba(255,255,255,.8)}
 .box3 .description{font-size:14px;color:#fff;margin:0 0 20px}
+.box3 .list{text-align: left}
 .box3 .icon{padding:0;margin:0;list-style:none}
 .box3 .icon li{display:inline-block;margin:0 10px 0 0}
-.box3 .icon li a{display:block;width:30px;height:30px;line-height:30px;color:#fff;background:#88c425;transition:all .5s}
+.box3 .icon li a{display:block;width:30px;height:30px;line-height:30px;color:#fff;background:#6eff90;transition:all .5s}
 .box3 .icon a:hover{text-decoration:none;animation:animate-hover .5s;transition:all .3s}
 .box3:hover:after{border-left:3px solid #fff;border-right:3px solid #fff}
-.box3 img{width:100%;height:auto;transition:all .3s}
+.box3 img{max-height: 400px; height:auto;width:100%;object-fit: contain;transition:all .3s}
 @keyframes animate{0%,100%{opacity:1}
 }
 @keyframes animate-hover{0%{box-shadow:0 0 0 10px rgba(255,255,255,.3)}
@@ -325,4 +346,3 @@ p{
 }
 @media only screen and (max-width:479px){.box3 .title{margin:0}
 }
-
