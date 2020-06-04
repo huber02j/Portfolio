@@ -7,8 +7,20 @@ html, body {
   font-family: "Times New Roman", Times, serif;
 }
 
+body{
+  background: rgb(107,213,203);
+  background: -moz-linear-gradient(144deg, rgba(107,213,203,0.9504844173997724) 40%, rgba(0,132,190,0.9476832969515931) 100%);
+  background: -webkit-linear-gradient(144deg, rgba(107,213,203,0.9504844173997724) 40%, rgba(0,132,190,0.9476832969515931) 100%);
+  background: linear-gradient(144deg, rgba(107,213,203,0.9504844173997724) 40%, rgba(0,132,190,0.9476832969515931) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6bd5cb",endColorstr="#0084be",GradientType=1);
+
+  background-repeat: repeat, no-repeat;
+  background-size: auto, 100% 100%;
+  background-attachment: fixed;
+}
+
 .top{
-  background-color: #444;
+  background-color: #343a40;
   color: white;
   padding: 10px;
   padding-left: 20px;
@@ -18,11 +30,12 @@ html, body {
   z-index: 2;
 }
 .main{
-  padding-top: 85px;
+  padding-top: 20px;
   display: block;
-  margin: 1em;
+  margin: 8%;
   position: relative;
   z-index: 0;
+
 }
 
 @media screen and (max-width: 600px) {
@@ -47,9 +60,18 @@ html, body {
 }
 
 .nav-pills>li>a:hover{
-  background-color: #444;
+  background-color: #C85750 !important;
+}
+
+.nav-pills .nav-item .nav-link{
+  background-color: #C85750;
+}
+.nav-pills .nav-item .nav-link:not(.active){ background-color: inherit; }
+
+.nav-pills>li>a{
   color: white;
 }
+
 kbd{
   display: inline;
 }
@@ -75,4 +97,7 @@ img{
 ol li{
   padding: 20px;
 }
-
+.tabs{}
+.tab-content{
+  border-radius: 10px;
+}
