@@ -1,13 +1,29 @@
 /*** Huber Style ***/
+html{
+  /* scroll-padding-top: 100px;*/ /*Fixes navbar covering titles*/
+}
 
 html, body {
   height: 100%;
   font-size: 100%;
   font-family: "Times New Roman", Times, serif;
+  scroll-behavior: smooth;
   /* font: 14px/1.85em "Open Sans", Arial, Helvetice Neue, sans-serif; */
 }
+/* Background */
+body{
+    /* Group */
+    background: rgb(193,167,141);
+    background: -moz-linear-gradient(144deg, rgba(193,167,141,0.9504844173997724) 40%, rgba(217,158,95,0.9476832969515931) 100%);
+    background: -webkit-linear-gradient(144deg, rgba(193,167,141,0.9504844173997724) 40%, rgba(217,158,95,0.9476832969515931) 100%);
+    background: linear-gradient(144deg, rgba(193,167,141,0.9504844173997724) 40%, rgba(217,158,95,0.9476832969515931) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c1a78d",endColorstr="#d99e5f",GradientType=1);
+    /* End Group */
+    background-repeat: repeat, no-repeat;
+		background-size: auto, 100% 100%;
+    background-attachment: fixed;
 
-
+}
 
 .openImg{
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../pics/Paimol.jpg");
@@ -42,34 +58,30 @@ h2{
 p{
   font-size: .9em;
 }
-/* */
-#sidebar, #content {
-  overflow-x: hidden; /* determines what happens when text goes out of its space */
-}
+
+
 #sidebar{
   position: fixed;
   position: -webkit-sticky; /*For Safari */
   float: left;
+  top:0;
   left: 0;
-  top: 0;
   z-index: 1;
   margin-left: 2%;
   margin-right: 2%;
   height: 100%;
-  background-color: #595959;  /*#DEDEDE*/
-  width: 20%;
+  width:20%;
+  background-color: #343a40;  /*#DEDEDE*/
+
+  border-radius: 20px;
   -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.67);
   -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.67);
   box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.67);
 }
 
-/* #sidebar .closebtn{
-  display: none;
-} */
 #sidebar h2{
   text-align: center;
   font-size: 2em;
-  font-weight: bold;
   color: white;
   padding-top: 15px;
 }
@@ -78,35 +90,87 @@ p{
   border-radius: 50%;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 10px;
 }
+
 #sidebar a{
   text-decoration: none;
   font-size: 25px;
   color: white;
 }
 
-#sidenav a.aNav:hover{color: #00BCEC;}
-#sidenav a.pNav:hover{color: #ec9500;}
-#sidenav a.sNav:hover{color: #00ec92;}
-#sidenav a.eNav:hover{color: #e800ec;}
-#sidenav a.cNav:hover{color: #0004ec;}
+/*Used for a top Navbar */
 
+/* #cover{
+  background-color: auto;
+
+  padding-top: 2em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+} */
+/* #sidenav{
+  border-radius: 20px;
+  margin-bottom: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.67);
+  -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.67);
+  box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.67);
+} */
+
+
+/* #sidenav h2{
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  padding-top: 15px;
+}
+
+#sidenav img{
+  vertical-align: middle;
+  border-radius: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+} */
+
+#sidenav a.aNav:hover{color: #42D9FF;}
+#sidenav a.pNav:hover{color: #F79256;}
+#sidenav a.sNav:hover{color: #06D6A0;}
+#sidenav a.eNav:hover{color: #E27396;}
+#sidenav a.cNav:hover{color: #91F9E5;}
+
+hr{
+  border-color:grey;
+}
 #sidenav li{
+  color: white;
   text-align: left;
   display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.8em;
 }
-.openImg{margin:0px;}
-.active.aNav {color: #00BCEC !important;}
-.active.pNav {color: #ec9500 !important;}
-.active.sNav {color: #00ec92 !important;}
-.active.eNav {color: #e800ec !important;}
-.active.cNav {color: #0004ec !important;}
 
-.aNav{border-left: 5px solid #00BCEC; padding-left: 10px;}
-.pNav{border-left: 5px solid #ec9500; padding-left: 10px;}
-.sNav{border-left: 5px solid #00ec92; padding-left: 10px;}
-.eNav{border-left: 5px solid #e800ec; padding-left: 10px;}
-.cNav{border-left: 5px solid #0004ec; padding-left: 10px;}
+#sidenav a:hover{text-decoration: none;}
+
+
+.openImg{margin:0px;}
+.current.aNav {color: #42D9FF !important;}
+.current.pNav {color: #F79256 !important;}
+.current.sNav {color: #06D6A0 !important;}
+.current.eNav {color: #E27396 !important;}
+.current.cNav {color: #91F9E5 !important;}
+
+/* Adds little bar to the left of names */
+/* .aNav{border-left: 2px solid #42D9FF; padding-left: 5px;}
+.pNav{border-left: 2px solid #06D6A0; padding-left: 5px;}
+.sNav{border-left: 2px solid #F79256; padding-left: 5px;}
+.eNav{border-left: 2px solid #E27396; padding-left: 5px;}
+.cNav{border-left: 2px solid #91F9E5; padding-left: 5px;} */
 
 /* .sideOpen{
   display: none;
@@ -127,30 +191,40 @@ p{
     width: 98% !important;
     padding: 2%;
   }
-  /* #sidebar .closebtn{
-    display: block;
-  }
-  .sideOpen{
-    display: block;
-    float: left;
-  } */
+
 
 }
-#content{
+#main{
   float: right;
-  background-color: white;
   width: 74%;
   margin-right: 2%;
 }
 
-#about h1{border-bottom: 5px solid #00BCEC; border-left: 5px solid #00BCEC; padding-left: 10px;}
-#projects h1{border-bottom: 5px solid #ec9500; border-left: 5px solid #ec9500; padding-left: 10px;}
-#skills h1{border-bottom: 5px solid #00ec92; border-left: 5px solid #00ec92; padding-left: 10px;}
-#education h1{border-bottom: 5px solid #e800ec; border-left: 5px solid #e800ec; padding-left: 10px;}
-#contact h1{border-bottom: 5px solid #0004ec; border-left: 5px solid #0004ec; padding-left: 10px;}
+:target::before {
+  content: "";
+  display: block;
+  height: 110px; /* fixed header height*/
+  margin: -110px 0 0; /* negative fixed header height */
+}
+
+#about      h1{border-bottom: 2px solid #42D9FF; border-left: 2px solid #42D9FF; padding-left: 10px;}
+#projects   h1{border-bottom: 2px solid #F79256; border-left: 2px solid #F79256; padding-left: 10px;}
+#skills     h1{border-bottom: 2px solid #06D6A0; border-left: 2px solid #06D6A0; padding-left: 10px;}
+#education  h1{border-bottom: 2px solid #E27396; border-left: 2px solid #E27396; padding-left: 10px;}
+#contact    h1{border-bottom: 2px solid #91F9E5; border-left: 2px solid #91F9E5; padding-left: 10px;}
 
 #aboutText{margin-left: 5%; margin-right: 5%;}
 #skills{box-sizing: border-box;}
+
+
+.sectionWrapper{
+  margin: 40px; /* just for contrast */
+  position: relative;
+
+  border-radius: 12px;
+  padding: 20px;
+  background-color: LightGrey;
+}
 
 /* Making the boxes for each class within the skills section */
 .classWrapper{
@@ -187,6 +261,7 @@ p{
   position: absolute;
   width: 6px;
   background-color: #00ec92;
+  outline: 1px solid grey;
   top: 0;
   bottom: 0;
   left: 5%;
@@ -299,7 +374,9 @@ p{
   color: white;
   margin: 15px;
   padding: 50px;
+  padding-bottom: 250px;
 }
+#contact h1{ margin-bottom: 20px; }
 
 #contact a{
   text-decoration: none;
